@@ -41,3 +41,6 @@ do
 done
 
 multiqc -o out/multiqc $WD
+
+mkdir envs
+conda env export > envs/rna-seq.yaml
