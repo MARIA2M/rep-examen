@@ -1,0 +1,97 @@
+STAR version=2.7.3a
+STAR compilation time,server,dir=Tue Oct 8 14:26:19 EDT 2019 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+STAR --runThreadN 4 --genomeDir res/genome/star_index/ --readFilesIn out/cutadapt/ERR2868173_1.trimmed.fastq.gz out/cutadapt/ERR2868173_2.trimmed.fastq.gz --readFilesCommand zcat --outFileNamePrefix out/star/ERR2868173/
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 out/star/ERR2868173/
+###### All USER parameters from Command Line:
+runThreadN                    4     ~RE-DEFINED
+genomeDir                     res/genome/star_index/     ~RE-DEFINED
+readFilesIn                   out/cutadapt/ERR2868173_1.trimmed.fastq.gz   out/cutadapt/ERR2868173_2.trimmed.fastq.gz        ~RE-DEFINED
+readFilesCommand              zcat        ~RE-DEFINED
+outFileNamePrefix             out/star/ERR2868173/     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        4
+genomeDir                         res/genome/star_index/
+readFilesIn                       out/cutadapt/ERR2868173_1.trimmed.fastq.gz   out/cutadapt/ERR2868173_2.trimmed.fastq.gz   
+readFilesCommand                  zcat   
+outFileNamePrefix                 out/star/ERR2868173/
+
+-------------------------------
+##### Final effective command line:
+STAR   --runThreadN 4   --genomeDir res/genome/star_index/   --readFilesIn out/cutadapt/ERR2868173_1.trimmed.fastq.gz   out/cutadapt/ERR2868173_2.trimmed.fastq.gz      --readFilesCommand zcat      --outFileNamePrefix out/star/ERR2868173/
+----------------------------------------
+
+
+   Input read files for mate 1, from input string out/cutadapt/ERR2868173_1.trimmed.fastq.gz
+-rw-r--r-- 1 user10 user10 130634 nov 17 18:49 out/cutadapt/ERR2868173_1.trimmed.fastq.gz
+
+   readsCommandsFile:
+exec > "out/star/ERR2868173/_STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "out/cutadapt/ERR2868173_1.trimmed.fastq.gz"
+
+
+   Input read files for mate 2, from input string out/cutadapt/ERR2868173_2.trimmed.fastq.gz
+-rw-r--r-- 1 user10 user10 130634 nov 17 18:49 out/cutadapt/ERR2868173_2.trimmed.fastq.gz
+
+   readsCommandsFile:
+exec > "out/star/ERR2868173/_STARtmp/tmp.fifo.read2"
+echo FILE 0
+zcat      "out/cutadapt/ERR2868173_2.trimmed.fastq.gz"
+
+Finished loading and checking parameters
+Reading genome generation parameters:
+### STAR   --runMode genomeGenerate   --runThreadN 4   --genomeDir res/genome/star_index/   --genomeFastaFiles res/genome/ecoli.fasta      --genomeSAindexNbases 9
+### GstrandBit=32
+versionGenome                 2.7.1a     ~RE-DEFINED
+genomeFastaFiles              res/genome/ecoli.fasta        ~RE-DEFINED
+genomeSAindexNbases           9     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+sjdbOverhang                  0     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   -     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               4718592   38293632        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 1
+1	NC_000913.3	4641652	0
+Started loading the genome: Sun Nov 17 18:49:12 2019
+
+Genome: size given as a parameter = 4718592
+SA: size given as a parameter = 38293632
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=9  nSAi=349524
+nGenome=4718592;  nSAbyte=38293632
+GstrandBit=32   SA number of indices=9283304
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 4718592 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 4718592 bytes
+SA file size: 38293632 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 38293632 bytes
+Loading SAindex ... done: 1529259 bytes
+Finished loading the genome: Sun Nov 17 18:49:12 2019
+
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Starting to map file # 0
+mate 1:   out/cutadapt/ERR2868173_1.trimmed.fastq.gz
+mate 2:   out/cutadapt/ERR2868173_2.trimmed.fastq.gz
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #0
+Completed: thread #3
+Completed: thread #2
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+ALL DONE!

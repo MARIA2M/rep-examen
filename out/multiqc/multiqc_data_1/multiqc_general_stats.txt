@@ -1,0 +1,10 @@
+Sample	STAR_mqc-generalstats-star-uniquely_mapped_percent	STAR_mqc-generalstats-star-uniquely_mapped	FastQC_mqc-generalstats-fastqc-percent_duplicates	FastQC_mqc-generalstats-fastqc-percent_gc	FastQC_mqc-generalstats-fastqc-avg_sequence_length	FastQC_mqc-generalstats-fastqc-percent_fails	FastQC_mqc-generalstats-fastqc-total_sequences	Cutadapt_mqc-generalstats-cutadapt-percent_trimmed
+ERR2868172	0.0	0.0						
+ERR2868172_1			29.700000000000003	52.0	75.00466666666667	27.27272727272727	3000.0	
+ERR2868172_2			29.700000000000003	52.0	75.00466666666667	27.27272727272727	3000.0	0.025776173926955654
+ERR2868173	0.0	0.0						
+ERR2868173_1			32.0	52.0	74.98233333333333	18.181818181818183	3000.0	
+ERR2868173_2			32.0	52.0	74.98233333333333	18.181818181818183	3000.0	0.024894752986258987
+ERR2868174	0.0	0.0						
+ERR2868174_1			32.19999999999999	52.0	75.00633333333333	36.36363636363637	3000.0	
+ERR2868174_2			32.19999999999999	52.0	75.00633333333333	36.36363636363637	3000.0	0.019109497420217846
